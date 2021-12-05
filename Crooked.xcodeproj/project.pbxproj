@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B279C762759F8DC00446B36 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B279C752759F8DC00446B36 /* MapKit.framework */; };
 		2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16EE27549EB100A9081D /* AppDelegate.swift */; };
 		2B7F16F127549EB100A9081D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16F027549EB100A9081D /* SceneDelegate.swift */; };
 		2B7F16F327549EB100A9081D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16F227549EB100A9081D /* ViewController.swift */; };
@@ -14,9 +15,16 @@
 		2B7F16F827549EB500A9081D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7F16F727549EB500A9081D /* Assets.xcassets */; };
 		2B7F16FB27549EB500A9081D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7F16F927549EB500A9081D /* LaunchScreen.storyboard */; };
 		2B7F170A27549FC400A9081D /* MetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F170927549FC400A9081D /* MetaViewController.swift */; };
+		2B7F17142754A17800A9081D /* MapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17132754A17800A9081D /* MapService.swift */; };
+		2B7F17162754A22B00A9081D /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17152754A22B00A9081D /* MapModel.swift */; };
+		2B7F17212754A30F00A9081D /* DIContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17202754A30F00A9081D /* DIContext.swift */; };
+		2B7F17232754A32300A9081D /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17222754A32300A9081D /* DIService.swift */; };
+		2B7F17272754A55400A9081D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17262754A55400A9081D /* Service.swift */; };
+		2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C8D275CB13600981E17 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B279C752759F8DC00446B36 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2B7F16EB27549EB100A9081D /* Crooked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crooked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7F16EE27549EB100A9081D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B7F16F027549EB100A9081D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,12 @@
 		2B7F16FA27549EB500A9081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B7F16FC27549EB500A9081D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B7F170927549FC400A9081D /* MetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaViewController.swift; sourceTree = "<group>"; };
+		2B7F17132754A17800A9081D /* MapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapService.swift; sourceTree = "<group>"; };
+		2B7F17152754A22B00A9081D /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		2B7F17202754A30F00A9081D /* DIContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContext.swift; sourceTree = "<group>"; };
+		2B7F17222754A32300A9081D /* DIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIService.swift; sourceTree = "<group>"; };
+		2B7F17262754A55400A9081D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2BC09C8D275CB13600981E17 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B279C762759F8DC00446B36 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B279C742759F8DB00446B36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B279C752759F8DC00446B36 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B7F16E227549EB100A9081D = {
 			isa = PBXGroup;
 			children = (
 				2B7F16ED27549EB100A9081D /* Crooked */,
 				2B7F16EC27549EB100A9081D /* Products */,
+				2B279C742759F8DB00446B36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +82,9 @@
 		2B7F16ED27549EB100A9081D /* Crooked */ = {
 			isa = PBXGroup;
 			children = (
+				2B7F171E2754A2C800A9081D /* Main */,
+				2B7F171D2754A2BB00A9081D /* Config */,
+				2B7F171C2754A2AF00A9081D /* Resources */,
 				2B7F170427549F3C00A9081D /* AdvanceServices */,
 				2B7F170327549F2E00A9081D /* BasicServices */,
 				2B7F170227549F2300A9081D /* Foundation */,
@@ -75,6 +102,12 @@
 		2B7F170227549F2300A9081D /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2B7F171F2754A2EE00A9081D /* DI */,
+				2B7F171B2754A29200A9081D /* Track */,
+				2B7F171A2754A28B00A9081D /* Storage */,
+				2B7F17192754A28400A9081D /* Network */,
+				2B7F17182754A27A00A9081D /* UI */,
+				2B7F17172754A27400A9081D /* Utils */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -82,6 +115,7 @@
 		2B7F170327549F2E00A9081D /* BasicServices */ = {
 			isa = PBXGroup;
 			children = (
+				2B7F170B2754A08100A9081D /* Map */,
 			);
 			path = BasicServices;
 			sourceTree = "<group>";
@@ -124,6 +158,138 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2B7F170B2754A08100A9081D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F170D2754A0AB00A9081D /* Implement */,
+				2B7F170C2754A0A000A9081D /* Interface */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2B7F170C2754A0A000A9081D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F170F2754A0BF00A9081D /* Model */,
+				2B7F170E2754A0AF00A9081D /* Service */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2B7F170D2754A0AB00A9081D /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F17122754A0F500A9081D /* Controller */,
+				2B7F17112754A0EE00A9081D /* View */,
+				2B7F17102754A0E800A9081D /* Model */,
+			);
+			path = Implement;
+			sourceTree = "<group>";
+		};
+		2B7F170E2754A0AF00A9081D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F17132754A17800A9081D /* MapService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2B7F170F2754A0BF00A9081D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F17152754A22B00A9081D /* MapModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B7F17102754A0E800A9081D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B7F17112754A0EE00A9081D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B7F17122754A0F500A9081D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BC09C8D275CB13600981E17 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2B7F17172754A27400A9081D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2B7F17182754A27A00A9081D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2B7F17192754A28400A9081D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2B7F171A2754A28B00A9081D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2B7F171B2754A29200A9081D /* Track */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		2B7F171C2754A2AF00A9081D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2B7F171D2754A2BB00A9081D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2B7F171E2754A2C800A9081D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2B7F171F2754A2EE00A9081D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				2B7F17202754A30F00A9081D /* DIContext.swift */,
+				2B7F17222754A32300A9081D /* DIService.swift */,
+				2B7F17262754A55400A9081D /* Service.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7F17232754A32300A9081D /* DIService.swift in Sources */,
+				2B7F17142754A17800A9081D /* MapService.swift in Sources */,
 				2B7F16F327549EB100A9081D /* ViewController.swift in Sources */,
+				2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */,
+				2B7F17212754A30F00A9081D /* DIContext.swift in Sources */,
 				2B7F170A27549FC400A9081D /* MetaViewController.swift in Sources */,
 				2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */,
+				2B7F17272754A55400A9081D /* Service.swift in Sources */,
+				2B7F17162754A22B00A9081D /* MapModel.swift in Sources */,
 				2B7F16F127549EB100A9081D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +529,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +558,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,11 +8,14 @@
 import UIKit
 
 class MetaViewController: UIViewController {
-
+    var mapViewController: UIViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        mapViewController = MapViewController()
+        if mapViewController != nil {
+            self.addChild(mapViewController!)
+            self.view.addSubview(mapViewController!.view)
+            mapViewController!.didMove(toParent: self)
+        }
     }
-
 }
