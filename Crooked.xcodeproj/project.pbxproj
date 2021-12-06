@@ -23,6 +23,8 @@
 		2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C8D275CB13600981E17 /* MapViewController.swift */; };
 		2BC09C90275CB32B00981E17 /* NearestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C8F275CB32B00981E17 /* NearestTableViewController.swift */; };
 		2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C96275CB42300981E17 /* NearestBaseCell.swift */; };
+		2BC09CA6275D8FBD00981E17 /* IMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09CA5275D8FBD00981E17 /* IMService.swift */; };
+		2BC09CAA275D905B00981E17 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09CA9275D905B00981E17 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		2BC09C8D275CB13600981E17 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2BC09C8F275CB32B00981E17 /* NearestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestTableViewController.swift; sourceTree = "<group>"; };
 		2BC09C96275CB42300981E17 /* NearestBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestBaseCell.swift; sourceTree = "<group>"; };
+		2BC09CA5275D8FBD00981E17 /* IMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMService.swift; sourceTree = "<group>"; };
+		2BC09CA9275D905B00981E17 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,12 @@
 		2B7F170327549F2E00A9081D /* BasicServices */ = {
 			isa = PBXGroup;
 			children = (
+				2BC09CA2275D8E6D00981E17 /* Video */,
+				2BC09CA0275D8E3100981E17 /* IM */,
+				2BC09C9E275D8CFE00981E17 /* Search */,
+				2BC09C9A275D8CB700981E17 /* User */,
+				2BC09C99275D8C9900981E17 /* AR */,
+				2BC09C98275D8C8900981E17 /* BlockChain */,
 				2B7F170B2754A08100A9081D /* Map */,
 			);
 			path = BasicServices;
@@ -127,6 +137,11 @@
 		2B7F170427549F3C00A9081D /* AdvanceServices */ = {
 			isa = PBXGroup;
 			children = (
+				2BC09CA1275D8E4900981E17 /* TimeMachine */,
+				2BC09C9F275D8E1E00981E17 /* Rank */,
+				2BC09C9D275D8CF200981E17 /* Discover */,
+				2BC09C9C275D8CE000981E17 /* Feed */,
+				2BC09C9B275D8CD600981E17 /* Profile */,
 				2B7F170527549F6D00A9081D /* Meta */,
 			);
 			path = AdvanceServices;
@@ -338,6 +353,117 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		2BC09C98275D8C8900981E17 /* BlockChain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BlockChain;
+			sourceTree = "<group>";
+		};
+		2BC09C99275D8C9900981E17 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		2BC09C9A275D8CB700981E17 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2BC09C9B275D8CD600981E17 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2BC09C9C275D8CE000981E17 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2BC09C9D275D8CF200981E17 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2BC09C9E275D8CFE00981E17 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2BC09C9F275D8E1E00981E17 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		2BC09CA0275D8E3100981E17 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				2BC09CA4275D8F8F00981E17 /* Implement */,
+				2BC09CA3275D8F8600981E17 /* Interface */,
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
+		2BC09CA1275D8E4900981E17 /* TimeMachine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TimeMachine;
+			sourceTree = "<group>";
+		};
+		2BC09CA2275D8E6D00981E17 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		2BC09CA3275D8F8600981E17 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2BC09CA8275D904100981E17 /* Service */,
+				2BC09CA7275D903900981E17 /* Model */,
+				2BC09CA5275D8FBD00981E17 /* IMService.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2BC09CA4275D8F8F00981E17 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Implement;
+			sourceTree = "<group>";
+		};
+		2BC09CA7275D903900981E17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BC09CA9275D905B00981E17 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BC09CA8275D904100981E17 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -419,8 +545,10 @@
 				2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */,
 				2B7F17272754A55400A9081D /* Service.swift in Sources */,
 				2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */,
+				2BC09CA6275D8FBD00981E17 /* IMService.swift in Sources */,
 				2B7F17162754A22B00A9081D /* MapModel.swift in Sources */,
 				2B7F16F127549EB100A9081D /* SceneDelegate.swift in Sources */,
+				2BC09CAA275D905B00981E17 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
