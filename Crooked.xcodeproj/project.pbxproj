@@ -25,6 +25,10 @@
 		2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C96275CB42300981E17 /* NearestBaseCell.swift */; };
 		2BC09CA6275D8FBD00981E17 /* IMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09CA5275D8FBD00981E17 /* IMService.swift */; };
 		2BC09CAA275D905B00981E17 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09CA9275D905B00981E17 /* Message.swift */; };
+		2BC0A0B2275DDBF900981E17 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0A0B1275DDBF900981E17 /* TabController.swift */; };
+		2BC0A0B4275DDDBB00981E17 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0A0B3275DDDBB00981E17 /* DiscoverViewController.swift */; };
+		2BC0A0B6275DDDC900981E17 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0A0B5275DDDC900981E17 /* FeedViewController.swift */; };
+		2BC0A0B8275DDDD700981E17 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC0A0B7275DDDD700981E17 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		2BC09C96275CB42300981E17 /* NearestBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestBaseCell.swift; sourceTree = "<group>"; };
 		2BC09CA5275D8FBD00981E17 /* IMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMService.swift; sourceTree = "<group>"; };
 		2BC09CA9275D905B00981E17 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2BC0A0B1275DDBF900981E17 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		2BC0A0B3275DDDBB00981E17 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		2BC0A0B5275DDDC900981E17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2BC0A0B7275DDDD700981E17 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,9 @@
 		2B7F170227549F2300A9081D /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2BC0A0BB275DDE8E00981E17 /* Image */,
+				2BC0A0BA275DDE8700981E17 /* Font */,
+				2BC0A0B9275DDE8100981E17 /* Color */,
 				2B7F171F2754A2EE00A9081D /* DI */,
 				2B7F171B2754A29200A9081D /* Track */,
 				2B7F171A2754A28B00A9081D /* Storage */,
@@ -296,6 +307,7 @@
 		2B7F171E2754A2C800A9081D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2BC0A0B1275DDBF900981E17 /* TabController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -377,6 +389,7 @@
 		2BC09C9B275D8CD600981E17 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				2BC0A0B7275DDDD700981E17 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -384,6 +397,7 @@
 		2BC09C9C275D8CE000981E17 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				2BC0A0B5275DDDC900981E17 /* FeedViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -391,6 +405,7 @@
 		2BC09C9D275D8CF200981E17 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				2BC0A0B3275DDDBB00981E17 /* DiscoverViewController.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -462,6 +477,27 @@
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		2BC0A0B9275DDE8100981E17 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		2BC0A0BA275DDE8700981E17 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2BC0A0BB275DDE8E00981E17 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,11 +576,15 @@
 				2B7F16F327549EB100A9081D /* ViewController.swift in Sources */,
 				2BC09C90275CB32B00981E17 /* NearestTableViewController.swift in Sources */,
 				2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */,
+				2BC0A0B4275DDDBB00981E17 /* DiscoverViewController.swift in Sources */,
+				2BC0A0B8275DDDD700981E17 /* ProfileViewController.swift in Sources */,
 				2B7F17212754A30F00A9081D /* DIContext.swift in Sources */,
 				2B7F170A27549FC400A9081D /* MetaViewController.swift in Sources */,
 				2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */,
+				2BC0A0B6275DDDC900981E17 /* FeedViewController.swift in Sources */,
 				2B7F17272754A55400A9081D /* Service.swift in Sources */,
 				2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */,
+				2BC0A0B2275DDBF900981E17 /* TabController.swift in Sources */,
 				2BC09CA6275D8FBD00981E17 /* IMService.swift in Sources */,
 				2B7F17162754A22B00A9081D /* MapModel.swift in Sources */,
 				2B7F16F127549EB100A9081D /* SceneDelegate.swift in Sources */,

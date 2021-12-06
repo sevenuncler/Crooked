@@ -21,7 +21,7 @@ class MetaViewController: UIViewController {
         }
         
         nearestViewController = NearestTableViewController()
-        if nearestViewController != nil { 
+        if nearestViewController != nil {
             DispatchQueue.main.async { [self] in
                 self.mapViewController?.present(nearestViewController!, animated: true, completion: nil)
             }
