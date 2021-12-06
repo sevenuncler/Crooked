@@ -15,5 +15,4 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         self.view.addSubview(mapServie.loadMap(MapModel())!)
     }
-
 }
