@@ -13,13 +13,15 @@ enum AnchorType {
     case Audio
 }
 
-class Anchor: NSObject {
+protocol AnchorProtocol {
+    
+}
+
+class Anchor: AnchorProtocol {
     var author: User?
     var title: String? // 昵称
     var type: AnchorType? // 类型
     var longtitude: Float?
     var latitude: Float?
-    override init() {
-        
-    }
+    
 }

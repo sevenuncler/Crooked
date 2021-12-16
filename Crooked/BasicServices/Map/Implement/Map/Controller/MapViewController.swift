@@ -14,5 +14,6 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(mapServie.loadMap(MapModel())!)
+        mapServie.update(mode: MapModel())
     }
 }

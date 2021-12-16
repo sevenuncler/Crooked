@@ -10,9 +10,11 @@ import UIKit
 class MetaViewController: UIViewController {
     var mapViewController: UIViewController?
     var nearestViewController: UIViewController?
+    var dataController: AnchorListDataController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataController = AnchorListDataController()
         mapViewController = MapViewController()
         if mapViewController != nil {
             self.addChild(mapViewController!)
@@ -20,7 +22,7 @@ class MetaViewController: UIViewController {
             mapViewController!.didMove(toParent: self)
         }
         
-        nearestViewController = NearestTableViewController()
+        nearestViewController = NearestTableViewController(dataController: dataController!)
         if nearestViewController != nil {
             DispatchQueue.main.async { [self] in
                 self.mapViewController?.present(nearestViewController!, animated: true, completion: nil)

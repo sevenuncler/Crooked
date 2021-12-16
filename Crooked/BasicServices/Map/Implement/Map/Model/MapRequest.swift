@@ -12,5 +12,5 @@ class AnchorRequest {
 }
 
 class AnchorResponse {
-    
+    var anchors: [Anchor]?
 }

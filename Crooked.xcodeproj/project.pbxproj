@@ -20,6 +20,15 @@
 		2B7F17212754A30F00A9081D /* DIContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17202754A30F00A9081D /* DIContext.swift */; };
 		2B7F17232754A32300A9081D /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17222754A32300A9081D /* DIService.swift */; };
 		2B7F17272754A55400A9081D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F17262754A55400A9081D /* Service.swift */; };
+		2B90F0AC2768240D00259FAC /* StringLocalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F0AB2768240D00259FAC /* StringLocalized.swift */; };
+		2B90F0AF2768250E00259FAC /* VideoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F0AE2768250E00259FAC /* VideoAnnotation.swift */; };
+		2B90F0B12768295B00259FAC /* VideoAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90F0B02768295B00259FAC /* VideoAnnotationView.swift */; };
+		2BAB12AE2769B3C200B4D90C /* BridgeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12AA2769B3C200B4D90C /* BridgeAnnotation.swift */; };
+		2BAB12AF2769B3C200B4D90C /* SanFranciscoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12AB2769B3C200B4D90C /* SanFranciscoAnnotation.swift */; };
+		2BAB12B02769B3C200B4D90C /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12AC2769B3C200B4D90C /* CustomAnnotation.swift */; };
+		2BAB12B12769B3C200B4D90C /* FerryBuildingAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12AD2769B3C200B4D90C /* FerryBuildingAnnotation.swift */; };
+		2BAB12B32769B84900B4D90C /* AnchorListDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12B22769B84900B4D90C /* AnchorListDataController.swift */; };
+		2BAB12B52769B8D600B4D90C /* AnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12B42769B8D600B4D90C /* AnnotationModel.swift */; };
 		2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C8D275CB13600981E17 /* MapViewController.swift */; };
 		2BC09C90275CB32B00981E17 /* NearestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C8F275CB32B00981E17 /* NearestTableViewController.swift */; };
 		2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C96275CB42300981E17 /* NearestBaseCell.swift */; };
@@ -40,6 +49,8 @@
 		2BCAEE12275ED270009FB418 /* MapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE11275ED270009FB418 /* MapRequest.swift */; };
 		2BCAEE14275ED4B4009FB418 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE13275ED4B4009FB418 /* Log.swift */; };
 		2BCAEE16275ED512009FB418 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE15275ED512009FB418 /* Track.swift */; };
+		2BCAEE18275EF091009FB418 /* NearestCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE17275EF091009FB418 /* NearestCellModel.swift */; };
+		2BCAEE1A275EF0C6009FB418 /* NearestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE19275EF0C6009FB418 /* NearestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +69,15 @@
 		2B7F17202754A30F00A9081D /* DIContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContext.swift; sourceTree = "<group>"; };
 		2B7F17222754A32300A9081D /* DIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIService.swift; sourceTree = "<group>"; };
 		2B7F17262754A55400A9081D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2B90F0AB2768240D00259FAC /* StringLocalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalized.swift; sourceTree = "<group>"; };
+		2B90F0AE2768250E00259FAC /* VideoAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAnnotation.swift; sourceTree = "<group>"; };
+		2B90F0B02768295B00259FAC /* VideoAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAnnotationView.swift; sourceTree = "<group>"; };
+		2BAB12AA2769B3C200B4D90C /* BridgeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeAnnotation.swift; sourceTree = "<group>"; };
+		2BAB12AB2769B3C200B4D90C /* SanFranciscoAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanFranciscoAnnotation.swift; sourceTree = "<group>"; };
+		2BAB12AC2769B3C200B4D90C /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		2BAB12AD2769B3C200B4D90C /* FerryBuildingAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FerryBuildingAnnotation.swift; sourceTree = "<group>"; };
+		2BAB12B22769B84900B4D90C /* AnchorListDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorListDataController.swift; sourceTree = "<group>"; };
+		2BAB12B42769B8D600B4D90C /* AnnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationModel.swift; sourceTree = "<group>"; };
 		2BC09C8D275CB13600981E17 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2BC09C8F275CB32B00981E17 /* NearestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestTableViewController.swift; sourceTree = "<group>"; };
 		2BC09C96275CB42300981E17 /* NearestBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestBaseCell.swift; sourceTree = "<group>"; };
@@ -78,6 +98,8 @@
 		2BCAEE11275ED270009FB418 /* MapRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRequest.swift; sourceTree = "<group>"; };
 		2BCAEE13275ED4B4009FB418 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		2BCAEE15275ED512009FB418 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		2BCAEE17275EF091009FB418 /* NearestCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestCellModel.swift; sourceTree = "<group>"; };
+		2BCAEE19275EF0C6009FB418 /* NearestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +162,7 @@
 		2B7F170227549F2300A9081D /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2B90F0AA276823AC00259FAC /* Language */,
 				2BC0A0BB275DDE8E00981E17 /* Image */,
 				2BC0A0BA275DDE8700981E17 /* Font */,
 				2BC0A0B9275DDE8100981E17 /* Color */,
@@ -350,6 +373,27 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		2B90F0AA276823AC00259FAC /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				2B90F0AB2768240D00259FAC /* StringLocalized.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		2B90F0AD276824B100259FAC /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				2BAB12AA2769B3C200B4D90C /* BridgeAnnotation.swift */,
+				2BAB12AC2769B3C200B4D90C /* CustomAnnotation.swift */,
+				2BAB12AD2769B3C200B4D90C /* FerryBuildingAnnotation.swift */,
+				2BAB12AB2769B3C200B4D90C /* SanFranciscoAnnotation.swift */,
+				2B90F0AE2768250E00259FAC /* VideoAnnotation.swift */,
+				2BAB12B42769B8D600B4D90C /* AnnotationModel.swift */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
 		2BC09C91275CB3D200981E17 /* Nearest */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				2BC09C96275CB42300981E17 /* NearestBaseCell.swift */,
+				2B90F0B02768295B00259FAC /* VideoAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +428,9 @@
 		2BC09C94275CB3FE00981E17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B90F0AD276824B100259FAC /* Annotation */,
+				2BCAEE17275EF091009FB418 /* NearestCellModel.swift */,
+				2BCAEE19275EF0C6009FB418 /* NearestViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -553,6 +601,7 @@
 		2BCAEE05275ED057009FB418 /* DataController */ = {
 			isa = PBXGroup;
 			children = (
+				2BAB12B22769B84900B4D90C /* AnchorListDataController.swift */,
 			);
 			path = DataController;
 			sourceTree = "<group>";
@@ -631,10 +680,14 @@
 				2B7F17232754A32300A9081D /* DIService.swift in Sources */,
 				2BCAEE01275ECE04009FB418 /* Anchor.swift in Sources */,
 				2BC0A0BF275DE4CC00981E17 /* Colors.swift in Sources */,
+				2BCAEE1A275EF0C6009FB418 /* NearestViewModel.swift in Sources */,
+				2BAB12B52769B8D600B4D90C /* AnnotationModel.swift in Sources */,
 				2B7F17142754A17800A9081D /* MapService.swift in Sources */,
 				2B7F16F327549EB100A9081D /* ViewController.swift in Sources */,
 				2BC09C90275CB32B00981E17 /* NearestTableViewController.swift in Sources */,
+				2B90F0AF2768250E00259FAC /* VideoAnnotation.swift in Sources */,
 				2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */,
+				2BAB12AE2769B3C200B4D90C /* BridgeAnnotation.swift in Sources */,
 				2BC0A0B4275DDDBB00981E17 /* DiscoverViewController.swift in Sources */,
 				2BCAEE12275ED270009FB418 /* MapRequest.swift in Sources */,
 				2BC0A0B8275DDDD700981E17 /* ProfileViewController.swift in Sources */,
@@ -644,18 +697,25 @@
 				2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */,
 				2BC0A0B6275DDDC900981E17 /* FeedViewController.swift in Sources */,
 				2BCAEE09275ED0D2009FB418 /* MapAction.swift in Sources */,
+				2BAB12B12769B3C200B4D90C /* FerryBuildingAnnotation.swift in Sources */,
 				2BC0A0BD275DE46200981E17 /* Color.swift in Sources */,
 				2B7F17272754A55400A9081D /* Service.swift in Sources */,
+				2BAB12B02769B3C200B4D90C /* CustomAnnotation.swift in Sources */,
 				2BCAEE0D275ED192009FB418 /* MapViewModel.swift in Sources */,
+				2B90F0B12768295B00259FAC /* VideoAnnotationView.swift in Sources */,
 				2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */,
+				2BAB12AF2769B3C200B4D90C /* SanFranciscoAnnotation.swift in Sources */,
 				2BCAEE10275ED200009FB418 /* MapApi.swift in Sources */,
 				2BC0A0B2275DDBF900981E17 /* TabController.swift in Sources */,
 				2BCAEE14275ED4B4009FB418 /* Log.swift in Sources */,
 				2BC09CA6275D8FBD00981E17 /* IMService.swift in Sources */,
+				2BAB12B32769B84900B4D90C /* AnchorListDataController.swift in Sources */,
 				2B7F17162754A22B00A9081D /* MapModel.swift in Sources */,
 				2B7F16F127549EB100A9081D /* SceneDelegate.swift in Sources */,
 				2BCAEE16275ED512009FB418 /* Track.swift in Sources */,
 				2BCAEE0B275ED0DE009FB418 /* MapReaction.swift in Sources */,
+				2BCAEE18275EF091009FB418 /* NearestCellModel.swift in Sources */,
+				2B90F0AC2768240D00259FAC /* StringLocalized.swift in Sources */,
 				2BC09CAA275D905B00981E17 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

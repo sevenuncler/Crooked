@@ -9,7 +9,7 @@ import Foundation
 
 public protocol DIServiceCenter {
     associatedtype T
-    static func service(proto: IService) -> IService
+    static func service(proto: IService.Type) -> IService
     func bind(target :AnyObject, proto :Protocol)
     func unBind(proto :Protocol)
     func unBind(target :AnyObject)
