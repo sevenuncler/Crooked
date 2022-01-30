@@ -9,26 +9,47 @@ import Foundation
 import UIKit
 
 enum AnnotationDataNotifyType {
-    case AnnotationDataNotifyTypeRefresh
-    case AnnotationDataNotifyTypeLoadMore
-    case AnnotationDataNotifyTypeDelete
-    case AnnotationDataNotifyTypeInsert
-    case AnnotationDataNotifyTypeReplace
+    case Refresh
+    case LoadMore
+    case Delete
+    case Insert
+    case Replace
 }
 
-typealias AnnotationCompletion = (Error, [Any]) -> Void
-typealias AnnotationNotifyHandler = (AnnotationDataNotifyType, [Any]) -> Void
+typealias AnnotationCompletion = (Error?, [Any]) -> Void
+typealias AnnotationNotifyHandler = (AnnotationDataNotifyType, [Any]?) -> Void
 
-class AnnotationRequest {
+class AnchorListRequest {
     
 }
 
 class AnchorListDataController {
     var allAnnotations: [AnchorProtocol]?
     var videoAnnotations: [AnchorProtocol]?
-    var registeredBlocks: NSMutableArray?
+    lazy var registeredBlocks: [AnnotationNotifyHandler] = {
+        return []
+    }()
     
-    func refresh(_ request: AnnotationRequest, completion: @escaping AnnotationCompletion) {
+    func refresh(completion: @escaping AnnotationCompletion) {
+        let anchor = Anchor.init()
+        anchor.title = "尚月阁"
+        let anchor1 = Anchor.init()
+        anchor.title = "尚月阁"
+        let anchor2 = Anchor.init()
+        anchor.title = "尚月阁"
+        let anchor3 = Anchor.init()
+        anchor.title = "尚月阁"
+        let anchor4 = Anchor.init()
+        anchor.title = "尚月阁"
+        let anchor5 = Anchor.init()
+        anchor.title = "尚月阁"
+        let list: [AnchorProtocol] = [anchor, anchor1, anchor2, anchor3, anchor4, anchor5]
+        allAnnotations = list
+        completion(nil, list)
+        notify(models: list, type: .Refresh)
+    }
+    
+    func refresh(_ request: AnchorListRequest, completion: @escaping AnnotationCompletion) {
         
     }
     
@@ -48,14 +69,16 @@ class AnchorListDataController {
         return true
     }
     
-    func notify(models: [AnchorProtocol]?, type: AnnotationDataNotifyType){
+    func notify(models: [AnchorProtocol]?, type: AnnotationDataNotifyType) {
+        for handler in registeredBlocks {
+            handler(type, models)
+        }
     }
     
     func registerBlock(handler: @escaping AnnotationNotifyHandler) {
-        registeredBlocks?.add(handler)
+        registeredBlocks.append(handler)
     }
     
     func unRigisterBlock(handler: @escaping AnnotationNotifyHandler) {
-        registeredBlocks?.remove(handler)
     }
 }

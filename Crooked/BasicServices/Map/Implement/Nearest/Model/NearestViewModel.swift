@@ -17,7 +17,7 @@ class NearestViewModel: NSObject {
     var anchors: [Anchor]?
     
     // callback
-    var didDataUpdate: ()->Void?
+    var didUpdate: (()->Void)?
     
     deinit {
         self.dataController.unRigisterBlock(handler: notifyHandler)

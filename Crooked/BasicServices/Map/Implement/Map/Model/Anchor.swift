@@ -8,7 +8,8 @@
 import UIKit
 
 enum AnchorType {
-    case Arrived
+    case ArrivedToDiscover
+    case ArrivedToWatch
     case Video
     case Audio
 }
@@ -23,5 +24,4 @@ class Anchor: AnchorProtocol {
     var type: AnchorType? // 类型
     var longtitude: Float?
     var latitude: Float?
-    
 }

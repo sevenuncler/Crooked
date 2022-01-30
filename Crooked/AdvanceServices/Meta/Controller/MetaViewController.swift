@@ -15,7 +15,7 @@ class MetaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dataController = AnchorListDataController()
-        mapViewController = MapViewController()
+        mapViewController = MapViewController(dataController: dataController!)
         if mapViewController != nil {
             self.addChild(mapViewController!)
             self.view.addSubview(mapViewController!.view)
@@ -24,9 +24,20 @@ class MetaViewController: UIViewController {
         
         nearestViewController = NearestTableViewController(dataController: dataController!)
         if nearestViewController != nil {
-            DispatchQueue.main.async { [self] in
-                self.mapViewController?.present(nearestViewController!, animated: true, completion: nil)
-            }
+            self.addChild(nearestViewController!)
+            self.view.addSubview(nearestViewController!.view)
+            nearestViewController!.didMove(toParent: self)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        dataController?.refresh(completion: { error, list in
+            
+        });
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
 }

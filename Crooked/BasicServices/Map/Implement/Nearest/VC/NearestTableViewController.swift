@@ -10,7 +10,7 @@ import UIKit
 class NearestTableViewController: UITableViewController {
     let dataContoller: AnchorListDataController?
     
-    lazy var nearestViewModel: NearestViewModel = {
+    lazy var viewModel: NearestViewModel = {
         if let controller = dataContoller {
             return NearestViewModel(dataController: controller)
         } else {
@@ -31,6 +31,9 @@ class NearestTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        dataContoller?.registerBlock(handler: { type, list in
+            self.tableView .reloadData()
+        })
     }
     
     override func viewDidLayoutSubviews() {
@@ -49,31 +52,35 @@ class NearestTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if nearestViewModel.nearestModels != nil {
-            return nearestViewModel.nearestModels!.count
+        if dataContoller != nil {
+            return dataContoller!.allAnnotations?.count ?? 0
         } else {
             return 0;
         }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NearestBaseCell.reuseID(), for: indexPath) as! NearestBaseCell
-        
-        // Configure the cell...
-        if let cellModel = nearestViewModel.nearestModels?[indexPath.row] {
-            cell.refresh(model: cellModel)
+        let model = dataContoller!.allAnnotations?[indexPath.row]
+        var cell: NearestBaseCell? = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(NearestBaseCell.self)) as! NearestBaseCell
+        if cell == nil {
+            cell = NearestBaseCell()
         }
         
-        return cell
+        // Configure the cell...
+        if model != nil {
+            cell!.refresh(model: model)
+        }
+        
+        return cell!
     }
     
     // MARK: - Internal
     func setupUI() {
-        self.tableView.register(NearestBaseCell.self, forCellReuseIdentifier: NearestBaseCell.reuseID())
+        self.tableView.register(NearestBaseCell.self, forCellReuseIdentifier: NSStringFromClass(NearestBaseCell.self))
     }
     
     func refreshIfNeeded() {
-        nearestViewModel.fetchAnchors { success, anchors in
+        viewModel.fetchAnchors { success, anchors in
             if success == true {
                 self.tableView.reloadData()
             }

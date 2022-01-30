@@ -9,4 +9,8 @@ import UIKit
 
 class NearestCellModel: NSObject {
     var origin: Any?
+    
+    func reuseID() -> String {
+        return NSStringFromClass(NearestBaseCell.self)
+    }
 }
