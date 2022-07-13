@@ -11,8 +11,5 @@ class RootViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = Color.color(named: .P1)
-        
     }
-
-
 }

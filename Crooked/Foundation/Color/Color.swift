@@ -28,4 +28,13 @@ class Color: NSObject {
             return UIColor.systemGray5
         }
     }
+    
+    class func randomColor() -> UIColor {
+        return UIColor.init(red: randomValue(), green: randomValue(), blue: randomValue(), alpha: randomValue())
+    }
+    
+    class func randomValue() -> CGFloat {
+        let value = arc4random() % 255;
+        return CGFloat(Float(value) / 255.0);
+    }
 }

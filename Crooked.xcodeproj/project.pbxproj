@@ -10,6 +10,9 @@
 		2B0972B2287EFFDB00FC7347 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B1287EFFDB00FC7347 /* BaseViewController.swift */; };
 		2B0972B4287F056C00FC7347 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B3287F056C00FC7347 /* BaseNavigationController.swift */; };
 		2B0972B6287F05D500FC7347 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B5287F05D500FC7347 /* RootViewController.swift */; };
+		2B0972B8287F0C5600FC7347 /* FeedSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B7287F0C5600FC7347 /* FeedSlideViewController.swift */; };
+		2B0972BA287F0C6600FC7347 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B9287F0C6600FC7347 /* FeedDetailViewController.swift */; };
+		2B0972BF287F103000FC7347 /* FeedSlideViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972BE287F103000FC7347 /* FeedSlideViewCell.swift */; };
 		2B279C762759F8DC00446B36 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B279C752759F8DC00446B36 /* MapKit.framework */; };
 		2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16EE27549EB100A9081D /* AppDelegate.swift */; };
 		2B7F16F127549EB100A9081D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16F027549EB100A9081D /* SceneDelegate.swift */; };
@@ -61,6 +64,9 @@
 		2B0972B1287EFFDB00FC7347 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2B0972B3287F056C00FC7347 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		2B0972B5287F05D500FC7347 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2B0972B7287F0C5600FC7347 /* FeedSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSlideViewController.swift; sourceTree = "<group>"; };
+		2B0972B9287F0C6600FC7347 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		2B0972BE287F103000FC7347 /* FeedSlideViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedSlideViewCell.swift; sourceTree = "<group>"; };
 		2B279C752759F8DC00446B36 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2B7F16EB27549EB100A9081D /* Crooked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crooked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7F16EE27549EB100A9081D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,28 @@
 				2B0972B3287F056C00FC7347 /* BaseNavigationController.swift */,
 			);
 			path = Container;
+			sourceTree = "<group>";
+		};
+		2B0972BB287F0FED00FC7347 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B0972BE287F103000FC7347 /* FeedSlideViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B0972BC287F0FF800FC7347 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2B0972BD287F100100FC7347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2B279C742759F8DB00446B36 /* Frameworks */ = {
@@ -497,7 +525,12 @@
 		2BC09C9C275D8CE000981E17 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				2B0972BD287F100100FC7347 /* Model */,
+				2B0972BC287F0FF800FC7347 /* ViewModel */,
+				2B0972BB287F0FED00FC7347 /* View */,
 				2BC0A0B5275DDDC900981E17 /* FeedViewController.swift */,
+				2B0972B7287F0C5600FC7347 /* FeedSlideViewController.swift */,
+				2B0972B9287F0C6600FC7347 /* FeedDetailViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -765,6 +798,7 @@
 				2BAB12AE2769B3C200B4D90C /* BridgeAnnotation.swift in Sources */,
 				2BC0A0B4275DDDBB00981E17 /* DiscoverViewController.swift in Sources */,
 				2BCAEE12275ED270009FB418 /* MapRequest.swift in Sources */,
+				2B0972BF287F103000FC7347 /* FeedSlideViewCell.swift in Sources */,
 				2BC0A0B8275DDDD700981E17 /* ProfileViewController.swift in Sources */,
 				2B7F17212754A30F00A9081D /* DIContext.swift in Sources */,
 				2BCAEE04275ECEE5009FB418 /* User.swift in Sources */,
@@ -772,11 +806,13 @@
 				2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */,
 				2BC0A0B6275DDDC900981E17 /* FeedViewController.swift in Sources */,
 				2BCAEE09275ED0D2009FB418 /* MapAction.swift in Sources */,
+				2B0972B8287F0C5600FC7347 /* FeedSlideViewController.swift in Sources */,
 				2B0972B6287F05D500FC7347 /* RootViewController.swift in Sources */,
 				2BAB12B12769B3C200B4D90C /* FerryBuildingAnnotation.swift in Sources */,
 				2BC0A0BD275DE46200981E17 /* Color.swift in Sources */,
 				2B7F17272754A55400A9081D /* Service.swift in Sources */,
 				2BAB12B02769B3C200B4D90C /* CustomAnnotation.swift in Sources */,
+				2B0972BA287F0C6600FC7347 /* FeedDetailViewController.swift in Sources */,
 				2BCAEE0D275ED192009FB418 /* MapViewModel.swift in Sources */,
 				2B90F0B12768295B00259FAC /* VideoAnnotationView.swift in Sources */,
 				2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */,
