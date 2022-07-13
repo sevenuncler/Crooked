@@ -65,7 +65,7 @@ class NearestTableViewController: UITableViewController {
         if cell == nil {
             cell = NearestBaseCell()
         }
-        
+        self.restorationIdentifier
         // Configure the cell...
         if model != nil {
             cell!.refresh(model: model)

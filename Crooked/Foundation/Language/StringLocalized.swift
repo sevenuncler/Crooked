@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-    func localized(_ default: String?) -> String {
+    func localized() -> String {
         return self;
     }
 }

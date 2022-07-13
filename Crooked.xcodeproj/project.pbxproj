@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0972B2287EFFDB00FC7347 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B1287EFFDB00FC7347 /* BaseViewController.swift */; };
+		2B0972B4287F056C00FC7347 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B3287F056C00FC7347 /* BaseNavigationController.swift */; };
+		2B0972B6287F05D500FC7347 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0972B5287F05D500FC7347 /* RootViewController.swift */; };
 		2B279C762759F8DC00446B36 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B279C752759F8DC00446B36 /* MapKit.framework */; };
 		2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16EE27549EB100A9081D /* AppDelegate.swift */; };
 		2B7F16F127549EB100A9081D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16F027549EB100A9081D /* SceneDelegate.swift */; };
-		2B7F16F327549EB100A9081D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7F16F227549EB100A9081D /* ViewController.swift */; };
 		2B7F16F627549EB100A9081D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7F16F427549EB100A9081D /* Main.storyboard */; };
 		2B7F16F827549EB500A9081D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7F16F727549EB500A9081D /* Assets.xcassets */; };
 		2B7F16FB27549EB500A9081D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7F16F927549EB500A9081D /* LaunchScreen.storyboard */; };
@@ -51,14 +53,18 @@
 		2BCAEE16275ED512009FB418 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE15275ED512009FB418 /* Track.swift */; };
 		2BCAEE18275EF091009FB418 /* NearestCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE17275EF091009FB418 /* NearestCellModel.swift */; };
 		2BCAEE1A275EF0C6009FB418 /* NearestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAEE19275EF0C6009FB418 /* NearestViewModel.swift */; };
+		3DDA4F3B19B1523AF7915D94 /* Pods_Crooked.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510F7C68A01668FAB8BA77C1 /* Pods_Crooked.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C8EFFBA7FF34833E262133A /* Pods-Crooked.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crooked.release.xcconfig"; path = "Target Support Files/Pods-Crooked/Pods-Crooked.release.xcconfig"; sourceTree = "<group>"; };
+		2B0972B1287EFFDB00FC7347 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2B0972B3287F056C00FC7347 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		2B0972B5287F05D500FC7347 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		2B279C752759F8DC00446B36 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2B7F16EB27549EB100A9081D /* Crooked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crooked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7F16EE27549EB100A9081D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B7F16F027549EB100A9081D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B7F16F227549EB100A9081D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B7F16F527549EB100A9081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B7F16F727549EB500A9081D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B7F16FA27549EB500A9081D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,6 +106,8 @@
 		2BCAEE15275ED512009FB418 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		2BCAEE17275EF091009FB418 /* NearestCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestCellModel.swift; sourceTree = "<group>"; };
 		2BCAEE19275EF0C6009FB418 /* NearestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestViewModel.swift; sourceTree = "<group>"; };
+		43838090000F6395387A5D92 /* Pods-Crooked.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crooked.debug.xcconfig"; path = "Target Support Files/Pods-Crooked/Pods-Crooked.debug.xcconfig"; sourceTree = "<group>"; };
+		510F7C68A01668FAB8BA77C1 /* Pods_Crooked.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crooked.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +116,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B279C762759F8DC00446B36 /* MapKit.framework in Frameworks */,
+				3DDA4F3B19B1523AF7915D94 /* Pods_Crooked.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0972B0287EFFAC00FC7347 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				2B0972B1287EFFDB00FC7347 /* BaseViewController.swift */,
+				2B0972B3287F056C00FC7347 /* BaseNavigationController.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 		2B279C742759F8DB00446B36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2B279C752759F8DC00446B36 /* MapKit.framework */,
+				510F7C68A01668FAB8BA77C1 /* Pods_Crooked.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +147,7 @@
 				2B7F16ED27549EB100A9081D /* Crooked */,
 				2B7F16EC27549EB100A9081D /* Products */,
 				2B279C742759F8DB00446B36 /* Frameworks */,
+				99764B01B43EA86C804AD1C1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,7 +170,6 @@
 				2B7F170227549F2300A9081D /* Foundation */,
 				2B7F16EE27549EB100A9081D /* AppDelegate.swift */,
 				2B7F16F027549EB100A9081D /* SceneDelegate.swift */,
-				2B7F16F227549EB100A9081D /* ViewController.swift */,
 				2B7F16F427549EB100A9081D /* Main.storyboard */,
 				2B7F16F727549EB500A9081D /* Assets.xcassets */,
 				2B7F16F927549EB500A9081D /* LaunchScreen.storyboard */,
@@ -162,6 +181,7 @@
 		2B7F170227549F2300A9081D /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2B0972B0287EFFAC00FC7347 /* Container */,
 				2B90F0AA276823AC00259FAC /* Language */,
 				2BC0A0BB275DDE8E00981E17 /* Image */,
 				2BC0A0BA275DDE8700981E17 /* Font */,
@@ -359,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				2BC0A0B1275DDBF900981E17 /* TabController.swift */,
+				2B0972B5287F05D500FC7347 /* RootViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -606,6 +627,15 @@
 			path = DataController;
 			sourceTree = "<group>";
 		};
+		99764B01B43EA86C804AD1C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43838090000F6395387A5D92 /* Pods-Crooked.debug.xcconfig */,
+				1C8EFFBA7FF34833E262133A /* Pods-Crooked.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,9 +643,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B7F16FF27549EB500A9081D /* Build configuration list for PBXNativeTarget "Crooked" */;
 			buildPhases = (
+				009A7CFAF12D127E29CC818A /* [CP] Check Pods Manifest.lock */,
 				2B7F16E727549EB100A9081D /* Sources */,
 				2B7F16E827549EB100A9081D /* Frameworks */,
 				2B7F16E927549EB100A9081D /* Resources */,
+				ABC660EE4020D70314CFEF06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -672,6 +704,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		009A7CFAF12D127E29CC818A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crooked-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC660EE4020D70314CFEF06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crooked/Pods-Crooked-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crooked/Pods-Crooked-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crooked/Pods-Crooked-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B7F16E727549EB100A9081D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -683,9 +757,10 @@
 				2BCAEE1A275EF0C6009FB418 /* NearestViewModel.swift in Sources */,
 				2BAB12B52769B8D600B4D90C /* AnnotationModel.swift in Sources */,
 				2B7F17142754A17800A9081D /* MapService.swift in Sources */,
-				2B7F16F327549EB100A9081D /* ViewController.swift in Sources */,
 				2BC09C90275CB32B00981E17 /* NearestTableViewController.swift in Sources */,
+				2B0972B4287F056C00FC7347 /* BaseNavigationController.swift in Sources */,
 				2B90F0AF2768250E00259FAC /* VideoAnnotation.swift in Sources */,
+				2B0972B2287EFFDB00FC7347 /* BaseViewController.swift in Sources */,
 				2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */,
 				2BAB12AE2769B3C200B4D90C /* BridgeAnnotation.swift in Sources */,
 				2BC0A0B4275DDDBB00981E17 /* DiscoverViewController.swift in Sources */,
@@ -697,6 +772,7 @@
 				2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */,
 				2BC0A0B6275DDDC900981E17 /* FeedViewController.swift in Sources */,
 				2BCAEE09275ED0D2009FB418 /* MapAction.swift in Sources */,
+				2B0972B6287F05D500FC7347 /* RootViewController.swift in Sources */,
 				2BAB12B12769B3C200B4D90C /* FerryBuildingAnnotation.swift in Sources */,
 				2BC0A0BD275DE46200981E17 /* Color.swift in Sources */,
 				2B7F17272754A55400A9081D /* Service.swift in Sources */,
@@ -860,6 +936,7 @@
 		};
 		2B7F170027549EB500A9081D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43838090000F6395387A5D92 /* Pods-Crooked.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -889,6 +966,7 @@
 		};
 		2B7F170127549EB500A9081D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8EFFBA7FF34833E262133A /* Pods-Crooked.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

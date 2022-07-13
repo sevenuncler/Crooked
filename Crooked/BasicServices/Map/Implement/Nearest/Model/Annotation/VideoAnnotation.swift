@@ -15,5 +15,5 @@ class VideoAnnotation: NSObject, MKAnnotation {
     var title: String? = NSLocalizedString("余杭", comment: "")
     
     // This property defined by `MKAnnotation` is not required.
-    var subtitle: String? = "华元美林".localized(nil)
+    var subtitle: String? = "华元美林".localized()
 }
