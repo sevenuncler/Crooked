@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import SnapKit
 
 class FeedSlideViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(tableView)
+        self.tableView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view)
+        }
         bind()
     }
     

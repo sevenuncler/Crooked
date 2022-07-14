@@ -1,16 +1,20 @@
 PODS:
+  - LookinServer (1.0.6)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - LookinServer
   - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - LookinServer
     - SnapKit
 
 SPEC CHECKSUMS:
+  LookinServer: 18155b1e4a08213c236a1dd6b7ca52328a70a1e3
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 6daa7e82b624945d09cd6b745dc83953deaa1afd
+PODFILE CHECKSUM: fdf176cbd34979f92abd832ad2fd2aa63d757362
 
 COCOAPODS: 1.11.3
