@@ -13,8 +13,6 @@ class FeedViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadContentViewController()
-        self.view.backgroundColor = .black
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -23,9 +21,6 @@ class FeedViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.view.snp.remakeConstraints { make in
-            make.edges.equalTo(self.view.superview!)
-        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
