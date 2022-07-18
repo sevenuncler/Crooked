@@ -34,6 +34,10 @@
 		2BAB12B12769B3C200B4D90C /* FerryBuildingAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12AD2769B3C200B4D90C /* FerryBuildingAnnotation.swift */; };
 		2BAB12B32769B84900B4D90C /* AnchorListDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12B22769B84900B4D90C /* AnchorListDataController.swift */; };
 		2BAB12B52769B8D600B4D90C /* AnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAB12B42769B8D600B4D90C /* AnnotationModel.swift */; };
+		2BAE449E2885A1B4003670A6 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE449D2885A1B4003670A6 /* VideoPlayViewController.swift */; };
+		2BAE44A02885A1CB003670A6 /* InteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE449F2885A1CB003670A6 /* InteractionViewController.swift */; };
+		2BAE44A22885A290003670A6 /* FeedContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE44A12885A290003670A6 /* FeedContentViewController.swift */; };
+		2BAE44A42885A31E003670A6 /* FeedContentViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE44A32885A31E003670A6 /* FeedContentViewControllerProtocol.swift */; };
 		2BC09C8E275CB13600981E17 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C8D275CB13600981E17 /* MapViewController.swift */; };
 		2BC09C90275CB32B00981E17 /* NearestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C8F275CB32B00981E17 /* NearestTableViewController.swift */; };
 		2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC09C96275CB42300981E17 /* NearestBaseCell.swift */; };
@@ -90,6 +94,10 @@
 		2BAB12AD2769B3C200B4D90C /* FerryBuildingAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FerryBuildingAnnotation.swift; sourceTree = "<group>"; };
 		2BAB12B22769B84900B4D90C /* AnchorListDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorListDataController.swift; sourceTree = "<group>"; };
 		2BAB12B42769B8D600B4D90C /* AnnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationModel.swift; sourceTree = "<group>"; };
+		2BAE449D2885A1B4003670A6 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
+		2BAE449F2885A1CB003670A6 /* InteractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionViewController.swift; sourceTree = "<group>"; };
+		2BAE44A12885A290003670A6 /* FeedContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContentViewController.swift; sourceTree = "<group>"; };
+		2BAE44A32885A31E003670A6 /* FeedContentViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContentViewControllerProtocol.swift; sourceTree = "<group>"; };
 		2BC09C8D275CB13600981E17 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2BC09C8F275CB32B00981E17 /* NearestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestTableViewController.swift; sourceTree = "<group>"; };
 		2BC09C96275CB42300981E17 /* NearestBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestBaseCell.swift; sourceTree = "<group>"; };
@@ -443,6 +451,22 @@
 			path = Annotation;
 			sourceTree = "<group>";
 		};
+		2BAE449B2885A175003670A6 /* VideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				2BAE449D2885A1B4003670A6 /* VideoPlayViewController.swift */,
+			);
+			path = VideoPlay;
+			sourceTree = "<group>";
+		};
+		2BAE449C2885A183003670A6 /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				2BAE449F2885A1CB003670A6 /* InteractionViewController.swift */,
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
 		2BC09C91275CB3D200981E17 /* Nearest */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,12 +549,16 @@
 		2BC09C9C275D8CE000981E17 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				2BAE449C2885A183003670A6 /* Interaction */,
+				2BAE449B2885A175003670A6 /* VideoPlay */,
 				2B0972BD287F100100FC7347 /* Model */,
 				2B0972BC287F0FF800FC7347 /* ViewModel */,
 				2B0972BB287F0FED00FC7347 /* View */,
 				2BC0A0B5275DDDC900981E17 /* FeedViewController.swift */,
 				2B0972B7287F0C5600FC7347 /* FeedSlideViewController.swift */,
 				2B0972B9287F0C6600FC7347 /* FeedDetailViewController.swift */,
+				2BAE44A12885A290003670A6 /* FeedContentViewController.swift */,
+				2BAE44A32885A31E003670A6 /* FeedContentViewControllerProtocol.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -800,8 +828,10 @@
 				2BCAEE12275ED270009FB418 /* MapRequest.swift in Sources */,
 				2B0972BF287F103000FC7347 /* FeedSlideViewCell.swift in Sources */,
 				2BC0A0B8275DDDD700981E17 /* ProfileViewController.swift in Sources */,
+				2BAE44A22885A290003670A6 /* FeedContentViewController.swift in Sources */,
 				2B7F17212754A30F00A9081D /* DIContext.swift in Sources */,
 				2BCAEE04275ECEE5009FB418 /* User.swift in Sources */,
+				2BAE44A02885A1CB003670A6 /* InteractionViewController.swift in Sources */,
 				2B7F170A27549FC400A9081D /* MetaViewController.swift in Sources */,
 				2B7F16EF27549EB100A9081D /* AppDelegate.swift in Sources */,
 				2BC0A0B6275DDDC900981E17 /* FeedViewController.swift in Sources */,
@@ -810,12 +840,14 @@
 				2B0972B6287F05D500FC7347 /* RootViewController.swift in Sources */,
 				2BAB12B12769B3C200B4D90C /* FerryBuildingAnnotation.swift in Sources */,
 				2BC0A0BD275DE46200981E17 /* Color.swift in Sources */,
+				2BAE44A42885A31E003670A6 /* FeedContentViewControllerProtocol.swift in Sources */,
 				2B7F17272754A55400A9081D /* Service.swift in Sources */,
 				2BAB12B02769B3C200B4D90C /* CustomAnnotation.swift in Sources */,
 				2B0972BA287F0C6600FC7347 /* FeedDetailViewController.swift in Sources */,
 				2BCAEE0D275ED192009FB418 /* MapViewModel.swift in Sources */,
 				2B90F0B12768295B00259FAC /* VideoAnnotationView.swift in Sources */,
 				2BC09C97275CB42300981E17 /* NearestBaseCell.swift in Sources */,
+				2BAE449E2885A1B4003670A6 /* VideoPlayViewController.swift in Sources */,
 				2BAB12AF2769B3C200B4D90C /* SanFranciscoAnnotation.swift in Sources */,
 				2BCAEE10275ED200009FB418 /* MapApi.swift in Sources */,
 				2BC0A0B2275DDBF900981E17 /* TabController.swift in Sources */,

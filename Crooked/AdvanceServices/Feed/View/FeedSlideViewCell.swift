@@ -8,16 +8,20 @@
 import UIKit
 
 class FeedSlideViewCell: UITableViewCell {
+    var contentViewController: (UIViewController & FeedContentViewControllerProtocol)?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func addContentViewController(containerViewController: UIViewController, contentViewController: (UIViewController & FeedContentViewControllerProtocol)) {
+        if self.contentViewController != nil {
+            self.contentViewController?.willMove(toParent: nil)
+            self.contentViewController?.view.removeFromSuperview()
+            self.contentViewController?.removeFromParent()
+            self.contentViewController = nil
+        }
+        
+        self.contentViewController = contentViewController
+        containerViewController.addChild(contentViewController)
+        self.contentView.addSubview(contentViewController.view)
+        contentViewController.didMove(toParent: containerViewController)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }

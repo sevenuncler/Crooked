@@ -41,6 +41,9 @@ class FeedSlideViewController: BaseViewController, UITableViewDelegate, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedSlideViewCell", for: indexPath)
         cell.selectionStyle = .none
         cell.backgroundColor = Color.randomColor()
+        if let contentCell = cell as? FeedSlideViewCell {
+            contentCell.addContentViewController(containerViewController: self, contentViewController: FeedContentFactory.shared.feedContentViewController())
+        }
         return cell
     }
     
